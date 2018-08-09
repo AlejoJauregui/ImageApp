@@ -7,6 +7,10 @@ ruby '2.4.4'
 #gem 'execjs'
 #Bootstrap
 #gem 'bootstrap'
+
+#Upload Images Gem
+gem 'carrierwave'#Help us to upload the images according to the model
+gem 'mini_magick' #Help us to process our images
 #Bootstrap saaas
 gem 'bootstrap-sass'
 #JQuery Rails

@@ -14,7 +14,7 @@ class ImagesController < ApplicationController
         #render plain: params[:image].inspect
         @image = Image.new images_params
         @image.save
-        #redirect_to @image  #redirecciona a una nueva vista  
+        redirect_to @image  #redirecciona a una nueva vista  
     end
 
     def show
@@ -39,7 +39,7 @@ class ImagesController < ApplicationController
     private
 
     def images_params
-        params.require(:image).permit(:description)
+        params.require(:image).permit :description, :picture
     end 
     def set_image
         @image = Image.find params[:id]
