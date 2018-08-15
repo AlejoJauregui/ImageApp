@@ -8,6 +8,8 @@ ruby '2.4.4'
 #Bootstrap
 #gem 'bootstrap'
 
+#Login
+gem 'devise', git: 'git://github.com/plataformatec/devise.git'
 #Upload Images Gem
 gem 'carrierwave'#Help us to upload the images according to the model
 gem 'mini_magick' #Help us to process our images
@@ -17,8 +19,8 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use Postgres as the database for Active Record
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
