@@ -8,8 +8,11 @@ ruby '2.4.4'
 #Bootstrap
 #gem 'bootstrap'
 
+gem 'remotipart' 
 #Login
 gem 'devise', git: 'git://github.com/plataformatec/devise.git'
+#JSon Web Token Gem
+gem 'jwt'
 #Upload Images Gem
 gem 'carrierwave'#Help us to upload the images according to the model
 gem 'mini_magick' #Help us to process our images
